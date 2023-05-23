@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUR EJS</title>
+</head>
+<body>
+    <div>
+        <% mûr.forEach(function(fichierImage){ %>
+            <%-  %> 
+            <a href="/public/<%= fichierImage.split('.')[0] %>.jpg">
+                <img src= '/public/<%= fichierImage.split('.')[0] %>_small.jpg'width="250" height="250">
+            </a>     
+
+        <% }); %> 
+    </div>
+</body>
+</html>
+ 

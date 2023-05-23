@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUR EJS</title>
+</head>
+<body>
+    <div>
+        <img src= '/public/image'<%=
+        const fichiersImage = sqlr.rows.map(row => row.fichier);
+        for (let i = 0 ; i < fichiersImage.length ; i++) {
+            const fichierSmallImage = fichiersImage[i].split('.')[0] + '_small.jpg';
+            const img = fichierSmallImage;
+            <a href="/image/'()+'" >' + img + '</a>
+        }
+
+        %>>
+    </div>
+</body>
+</html>.
